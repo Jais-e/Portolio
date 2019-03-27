@@ -23,7 +23,7 @@ let me = [
   // About me [0]
   ['<img src="img/about-me-full3.jpg">', '<h1 class="case-title">Om mig</h1>', '<p class="case-description">Hej, jeg studerer Multimedie Design (Frontend) på Erhvervs Akademi Aarhus og leder efter en praktikplads, hvor mine nuværende evner kan tages i brug, samtidig med at der er tid til at lære mig noget nyt. Jeg har gennem årene haft fat i de fleste af Adobe værktøjerne og kan producere både grafik, video og animationer, men har de seneste par år lagt vægt på kodning og frontend. Som udgangspunkt er jeg mest interesseret i et sted, hvor praktikken er med henblik på senere ansættelse.</p>'],
   // About me [1]
-  [ '<img src="img/about-me-full3.jpg">', '<h1 class="case-title">Hvem er jeg?</h1>', "<p class='case-description'>Jeg ser mig selv som en problemløser og motiveres af at få ting til at fungere, hvad enten det er funktionelt eller visuelt. En af mine styrker er, en solid logisk forståelse der bevirker, at jeg er god til at se helheden i et projekt og få et hurtigt overblik over problemstillinger og mulige løsninger. Min kreative side tændes af hvad jeg ser og hører på kundebesøg og af kollegers input og idéer.<br>Du kan læse mere om mig og se mit CV på <a href='https://www.linkedin.com/in/jaiseriksen/' target='_blank'>LinkedIn</a> </p>" ]
+  [ '<img src="img/about-me-full4.jpg">', '<h1 class="case-title">Hvem er jeg?</h1>', "<p class='case-description'>Jeg ser mig selv som en problemløser og motiveres af at få ting til at virke, hvad enten det er funktionelt eller visuelt. En af mine styrker er, en solid logisk forståelse der bevirker, at jeg er god til at se helheden i et projekt og få et hurtigt overblik over problemstillinger og mulige løsninger. Min kreative side tændes af hvad jeg ser og hører på kundebesøg og af kollegers input og idéer.<br>Du kan læse mere om mig og se mit CV på <a href='https://www.linkedin.com/in/jaiseriksen/' target='_blank'>LinkedIn</a> </p>" ]
 ]
 let komedieHuset = [
   //Case 1 [0]
@@ -37,7 +37,7 @@ let komedieHuset = [
 ]
 let bigO = [
   //Case 2 [1]
-  ['<img src="img/case2-full.jpg">', '<h1 class="case-title">Big O & The Blue Quarters</h1>', '<p class="case-description">Oprindelugt et eksamensprojekt til <em>Grafisk design & brugervenlighed</em> i 2014 (har fået en makeover siden) - enkeltfag til  <em>Akademi uddannelsen i IT - web udvikling</em>. Mit første Wordpress projekt. Er koblet op med Facebook begivenheder og Youtube videoer.</p>']
+  ['<img src="img/case2-full.jpg">', '<h1 class="case-title">Big O & The Blue Quarters</h1>', '<p class="case-description">Oprindeligt et eksamensprojekt til <em>Grafisk design & brugervenlighed</em> i 2014 (har fået en makeover siden) - enkeltfag til  <em>Akademi uddannelsen i IT - web udvikling</em>. Mit første Wordpress projekt. Er koblet op med Facebook begivenheder og Youtube videoer.</p>']
 ]
 let idesign  = [
   //Case 3 [2]
@@ -62,7 +62,11 @@ let alternativet = [
   ],
 ]
 let fillTime = [
-  ['<img class="case-img" src="img/logoanimation3.gif">']
+  ['<img class="case-img" src="img/logoanimation3.gif">','<h1 class="case-title">FillTime Activities</h1>', '<p class="case-description">Webapp eksamens projekt på Erhvervsakademi Aarhus 3. semester. På dette projekt arbejdede jeg alene, og har lavet kode, logo, animation og design selv. Konceptet for appen er at udfylde ventetid med <i>her og nu </i>aktiviteter. For folk med opdelte arbejdsdage i andre byer, forretningsrejsende m. fl. Baseret på gps lokation og valg af kategori og tid til rådighed kan man få vist aktiviteter i ens nærhed.<br>'
+  ],
+  [
+  '<img src="img/case7-full.jpg">','<h1 class="case-title">FillTime Activities</h1>','<p class="case-description">Prototype kan ses <a href="http://jais-e.dk/filltime" target="_blank">her.</a> <br>(Det er en prototype med begrænset funktionalitet designet til mobil visning)</p>'
+  ]
 ]
 // Back to "frontpage"
 document.querySelector('.brand').onclick = function(){
@@ -116,10 +120,6 @@ if (currentCase == 'case5') {
   $('.case-content').html(alternativet[0]);
 
   };
-if (currentCase == 'case7') {
-  $('.case-content').html(caseNumber[0]);
-
-  };
   if (currentCase == 'case6') {
     $('.case-content').html(fillTime[0]);
 
@@ -165,8 +165,11 @@ $('#about-me').click(function() {
         .html(alternativet[currentIndex]);
         let caseLength = $(alternativet).length;
         };
-      if (currentCase == 'case6') {
-        $('.case-content').html(caseNumber[currentIndex]);
+      if (currentCase == 'case6' && currentIndex+1 < $(fillTime).length) {
+        $('.case-content').animate({left: "-1000"}, 150)
+        currentIndex++;
+        $('.case-content').animate({left: "0"}, 150)
+        $('.case-content').html(fillTime[currentIndex]);
         var caseLength = $(caseName).length;
         };
 
@@ -216,8 +219,10 @@ $('#about-me').click(function() {
          };
 
 
-       if (currentCase == 'case6') {
-         $('.case-content').html(caseNumber[currentIndex]);
+       if (currentCase == 'case6' && currentIndex > 0) {
+         currentIndex--;
+         $('.case-content').animate({left: "1000"}, 150)
+         $('.case-content').animate({left: "0"}, 150).html(fillTime[currentIndex]);
 
          };
          if (currentIndex < 0){
