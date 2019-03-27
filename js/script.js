@@ -21,19 +21,19 @@ let currentCase ;
 let currentIndex = 0;
 let me = [
   // About me [0]
-  ['<img src="img/about-me-full.jpg">', '<h1 class="case-title">Om mig</h1>', '<p class="case-description">Hej, mit navn er <b>Jais Kurecko Eriksen</b> og jeg studerer Multimedie Design (Frontend) på Erhvervs Akademi Aarhus.<br/> Jeg leder efter en praktikplads, hvor mine nuværende evner kan tages i brug, samtidig med at der er tid til at lære mig noget nyt. Jeg har gennem årene haft fat i de fleste af Adobe værktøjerne og kan producere både grafik, video og animationer, men har de seneste par år lagt vægt på kodning og frontend. Som udgangspunkt er jeg mest interesseret i et sted, hvor praktikken er med henblik på senere ansættelse.</p>'],
+  ['<img src="img/about-me-full3.jpg">', '<h1 class="case-title">Om mig</h1>', '<p class="case-description">Hej, jeg studerer Multimedie Design (Frontend) på Erhvervs Akademi Aarhus og leder efter en praktikplads, hvor mine nuværende evner kan tages i brug, samtidig med at der er tid til at lære mig noget nyt. Jeg har gennem årene haft fat i de fleste af Adobe værktøjerne og kan producere både grafik, video og animationer, men har de seneste par år lagt vægt på kodning og frontend. Som udgangspunkt er jeg mest interesseret i et sted, hvor praktikken er med henblik på senere ansættelse.</p>'],
   // About me [1]
-  [ '<img src="img/about-me-full.jpg">', '<h1 class="case-title">Hvem er jeg?</h1>', "<p class='case-description'>Jeg ser mig selv som en problemløser og motiveres af at få ting til at fungere, hvad enten det er funktionelt eller visuelt. En af mine styrker er, en solid logisk forståelse der bevirker, at jeg er god til at se helheden i et projekt og få et hurtigt overblik over problemstillinger og mulige løsninger. Min kreative side tændes af hvad jeg ser og hører på kundebesøg og af kollegers input og idéer.</p>", '<a href="https://www.linkedin.com/in/jaiseriksen/" target="_blank">LinkedIn</a>' ]
+  [ '<img src="img/about-me-full3.jpg">', '<h1 class="case-title">Hvem er jeg?</h1>', "<p class='case-description'>Jeg ser mig selv som en problemløser og motiveres af at få ting til at fungere, hvad enten det er funktionelt eller visuelt. En af mine styrker er, en solid logisk forståelse der bevirker, at jeg er god til at se helheden i et projekt og få et hurtigt overblik over problemstillinger og mulige løsninger. Min kreative side tændes af hvad jeg ser og hører på kundebesøg og af kollegers input og idéer.<br>Du kan læse mere om mig og se mit CV på <a href='https://www.linkedin.com/in/jaiseriksen/' target='_blank'>LinkedIn</a> </p>" ]
 ]
 let komedieHuset = [
   //Case 1 [0]
-  ['<img src="img/case1-full.jpg">', '<h1 class="case-title">Komediehuset</h1>', '<p class="case-description"><b>Komediehuset</b> er en teaterskole i Horsens. Som en del af en freelance ansættelse på Komediehuset i 2017 lavede jeg et nyt website til dem. De havde i forvejen en side bygget på et 15 år gammelt framework, så der var hårdt brug for en makover. Komediehuset er et meget alsidigt hus med en speciel stil, så det var en god ufordring at lave et design der kunne rumme det.<br/></p>'],
+  ['<img src="img/case1-full.jpg">', '<h1 class="case-title">Komediehuset</h1>', '<p class="case-description"><b>Komediehuset</b> er en teaterskole i Horsens. Som en del af en freelance ansættelse på Komediehuset i 2017 lavede jeg et nyt website til dem. De havde i forvejen en side bygget på et 15 år gammelt framework, så der var hårdt brug for en makover. Komediehuset er et meget alsidigt hus med en speciel stil, så det var en god ufordring at lave et design der kunne rumme det.<br/><br><a href="http://www.komediehuset.dk" target="_blank">Besøg siden</a></p>'],
   //Case 1 [1]
-  ['<img src="img/case1-full2.jpg">', '<h1 class="case-title">Komediehuset</h1>', '<p class="case-description">Selve designet er lavet, så det matcher husets atmosfære og lidt skæve indretningsstil - Ikke for mange lige linjer .<br/>Krav til funktionalitet: Mulighed for at personalet selv kan opdatere indhold, sende nyhedsbreve, opkobling til diverse SoMe platforme og mobilvenligt - Det åbenlyse valg var en Wordpress løsning. <a href="www.komediehuset.dk target="_blank">Se sitet</a><br><br><em>"Jais er god til at fange vores ønsker om en grafisk profil der støtter sig op af teatrets kunstneriske profil, og som ligger sig i forlængelse af den fortælling vi ønsker formidlet om komediehuset. - <b>Sabrina Koch - Producer</b></em></p>'],
+  ['<img src="img/case1-full2.jpg">', '<h1 class="case-title">Komediehuset</h1>', '<p class="case-description">Selve designet er lavet, så det matcher husets atmosfære og lidt skæve indretningsstil - Ikke for mange lige linjer .<br/>Krav til funktionalitet: Mulighed for at personalet selv kan opdatere indhold, sende nyhedsbreve, opkobling til diverse SoMe platforme og mobilvenligt - Det åbenlyse valg var en Wordpress løsning. <br><a href="http://www.komediehuset.dk" target="_blank">Besøg siden</a><br><br><em>"Jais er god til at fange vores ønsker om en grafisk profil der støtter sig op af teatrets kunstneriske profil, og som ligger sig i forlængelse af den fortælling vi ønsker formidlet om komediehuset. - <b>Sabrina Koch - Producer</b></em></p>'],
 
-  ['<img src="img/case1-full3.jpg">', '<h1 class="case-title">Komediehuset</h1>', '<p class="case-description">Jeg fik også produceret diverse materiale til tryk, såsom plakater, flyers, postkort og eventprogrammer</p>'],
+  ['<img src="img/case1-full3.jpg">', '<h1 class="case-title">Komediehuset</h1>', '<p class="case-description">Jeg fik også produceret diverse materiale til tryk, såsom plakater, flyers, postkort og eventprogrammer.<br><br><a href="http://www.komediehuset.dk" target="_blank">Besøg siden</a></p>'],
 
-['<h1 class="case-title">Den Eventyrlige Julerejse</h1>', '<video class="case-video" poster="video/poster-julerejse.jpg" controls preload><source src="video/julerejsen.mp4"></video>', '<p class="case-description">En lille teaser video til det årlige joleshow på Komediehuset. Jeg har både filmet og redigeret.</p>']
+['<h1 class="case-title">Den Eventyrlige Julerejse</h1>', '<video class="case-video" poster="video/poster-julerejse.jpg" controls preload><source src="video/julerejsen.mp4"></video>', '<p class="case-description">En lille teaser video til det årlige joleshow på Komediehuset. Jeg har filmet og redigeret.</p>']
 ]
 let bigO = [
   //Case 2 [1]
@@ -41,10 +41,10 @@ let bigO = [
 ]
 let idesign  = [
   //Case 3 [2]
-  ['<img src="img/case3-full.jpg">', '<h1 class="case-title">IDesign4U</h1>', '<p class="case-description">Dette var mit eget lille eventyr som selvstændig freelancer. Er lavet i Wordpress med et noget modificeret tema. Et relativt simpelt design, med hjemmelavede grafiske elementer, aktuelle tilbud, produkt- og prislister. Plugins: Page builder, AIO SEO, Wordfence security, Child theme, Portfolio Gallery med flere. </p>']
+  ['<img src="img/case3-full.jpg">', '<h1 class="case-title">IDesign4U</h1>', '<p class="case-description">Dette var mit eget lille eventyr som selvstændig freelancer. Er lavet i Wordpress med et noget tilpasset tema. Et relativt simpelt design, med hjemmelavede grafiske elementer, aktuelle tilbud, produkt- og prislister. Plugins: Page builder, AIO SEO, Wordfence security, Child theme, Portfolio Gallery med flere. </p>']
 ]
 let randMyDay = [
-  ['<img src="img/case4-full.jpg">', '<h1 class="case-title">Randomize my day</h1>', '<p class="case-description">Et UX projekt på Erhvervs Akademi Aarhus. Opgaven var at finde en ny måde for Hallo hostel at kommunikere med kunderne  på. Jeg fik en ide om en <em>enarmet tyveknægt</em>der kunne generere en tur i byen baseret på tilfældighed udvælgelse af steder indenfor valgte kategorier. Og ligesom på en rigtig enarmet tyveknægt, med mulighed for at beholde ét resultat, og lade de andre rulle igen. Direktøren var meget vild med idéen og sagde at den ville blive implementeret i deres elevator, dog med et anderledes design - Har ikke tjekket om det er sket :-)</p>']
+  ['<img src="img/case4-full.jpg">', '<h1 class="case-title">Randomize my day</h1>', '<p class="case-description">Et UX projekt på Erhvervs Akademi Aarhus. Opgaven var at finde en ny måde for Hallo hostel at kommunikere med kunderne  på. Jeg fik en ide om en <em>enarmet tyveknægt</em>der kunne generere en tur i byen baseret på tilfældighed udvælgelse af steder indenfor valgte kategorier. Og ligesom på en rigtig enarmet tyveknægt, med mulighed for at beholde ét resultat, og lade de andre rulle igen. Direktøren var meget vild med idéen og sagde at den ville blive implementeret i deres elevator, dog med et andet design - Har ikke undersøgt om det er sket :-)</p>']
 ]
 let alternativet = [
   ['<img src="img/case5-full.jpg">', '<h1 class="case-title">Alternativet Horsens</h1>', '<p class="case-description">Kampagnemateriale til Alternativet Horsens, hvor jeg en kort overgang selv var formand, i forbindelse med KV 2017. En papirløs valgkampagne på Facebook med digitale "flyers", motion graphics og et mindre Wordpress website. Jeg havde det ret sjovt med Adobe After Effects i en <em>learning by doing</em> proces, da det var første gang jeg brugt det program. Resultaterne kan ses på de næste sider.</p>'],
@@ -62,7 +62,7 @@ let alternativet = [
   ],
 ]
 let fillTime = [
-  ['<picture class="case-img"><img src="img/logoanimation3.gif"></picture>']
+  ['<img class="case-img" src="img/logoanimation3.gif">']
 ]
 // Back to "frontpage"
 document.querySelector('.brand').onclick = function(){
@@ -81,8 +81,8 @@ document.querySelector('#cases-btn').onclick = function(){
   let contentHeieght = document.querySelector('.content').offsetHeight;
   let casesHeight = contentHeieght - frontHeight;
   document.querySelector('.cases').style.height = "casesHeight";
-  setTimeout(function(){document.querySelector('.cases').style.display = "flex";}, 600);
-  setTimeout(function(){document.querySelector('.cases').style.opacity = "1"}, 650);
+  setTimeout(function(){document.querySelector('.cases').style.display = "flex";}, 400);
+  setTimeout(function(){document.querySelector('.cases').style.opacity = "1"}, 410);
 
 };
 
@@ -132,6 +132,7 @@ $('#about-me').click(function() {
 
     };
  });
+
 
 // show next/previous page in current case //
   $('.next').click(function(){
